@@ -8,6 +8,7 @@ This is a temporary script file.
 import numpy as np
 import pandas as pd
 import matplotlib as mpl
+import random
 
 class Question:
     def __init__(self, Question, Answer, Alternatives):
@@ -19,7 +20,7 @@ def Initiate_Questions():
     My_Source = []
     for i in range(8):
         My_Source.append(Question("q", "a", 
-                                  np.random.shuffle(["True", "False"])))
+                                  random.sample(["True", "False"], 2)))
         # My_Source.append(Question("True + True", "True"))
 
     My_Source[0].question, My_Source[0].answer= "True + True", "True"
@@ -72,7 +73,8 @@ def Ask(Source, num_question):
             print("⭐ Correct! ⭐")
             num_correct += 1
         else:
-            print("⚠️ Wrong! The correct answer is " + i.answer)
+            print("⚠️ Wrong! The correct answer is " 
+                  + str(i.alternatives.index(i.answer)+1) + ") " + i.answer)
         
     print("\n\n ✨✨   Congrats   ✨✨\n You answred "+ str(num_correct) + " questiosn corectly!")
 # x= [i for i in range(5)]

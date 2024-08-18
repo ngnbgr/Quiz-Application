@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Aug 18 18:16:07 2024
+
+@author: ngnba
+"""
+[Question_1]
+question = "True + True"
+answer = "True"
+options = ["True", "False"]
+
+[Question_2]
+question = "True + False"
+answer = "False"
+options = ["True", "False"]
