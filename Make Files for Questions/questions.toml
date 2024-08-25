@@ -3,15 +3,27 @@ q0 = "True + True"
 q1 = "True + False"
 q2 = "False + True"
 q3 = "False + False"
+q4 = "How do you insert COMMENTS in Python code?"
+q5 = "Which one is NOT a legal variable name?"
+q6 = "How do you create a variable with the numeric value 5?"
+q7 = "What is the correct file extension for Python files?"
 
 [answers]
 q0 = "True"
-q1 = "True"
-q2 = "True"
+q1 = "False"
+q2 = "False"
 q3 = "True"
+q4 = "# This is comment"
+q5 = "_myvar"
+q6 = "Both answers are correct"
+q7 = ".py"
 
 [options]
 q0 = [ "True", "False",]
 q1 = [ "True", "False",]
 q2 = [ "True", "False",]
 q3 = [ "True", "False",]
+q4 = [ "\\This is comment", "\\*This is comment*\\ ", "# This is comment",]
+q5 = [ "_myvar", "Myvar", "my-var", "my_var",]
+q6 = [ "x = 5", "x = int(5)", "Both answers are correct",]
+q7 = [ ".pt", ".py", ".pyt", ".pyth",]
